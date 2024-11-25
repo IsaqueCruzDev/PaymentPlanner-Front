@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class PaymentServiceService {
 
-  private apiUrl = 'http://localhost:5228/Payment'
+  private apiUrl = 'https://payment-hpbqd0bda3ehd4da.ukwest-01.azurewebsites.net/Payment'
 
   constructor(private httpClient: HttpClient) { }
 
