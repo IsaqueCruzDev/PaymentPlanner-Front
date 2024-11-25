@@ -12,11 +12,11 @@ export class PaymentServiceService {
   constructor(private httpClient: HttpClient) { }
 
   getPaymentTypes(): Observable<any> {
-    return this.httpClient.get('http://localhost:5228/PaymentType')
+    return this.httpClient.get('https://payment-hpbqd0bda3ehd4da.ukwest-01.azurewebsites.net/PaymentType')
   }
 
   getPayments(): Observable<any> {
-    return this.httpClient.get('http://localhost:5228/Payment')
+    return this.httpClient.get('https://payment-hpbqd0bda3ehd4da.ukwest-01.azurewebsites.net/Payment')
   }
 
   createPayment(payment: any) {
